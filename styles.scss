@@ -7,6 +7,8 @@ html,body{
     font-size: 14px;
     background-color:#333;
     font-family: Arial, Helvetica, sans-serif;
+    
+    overflow-x: hidden;
 }
 .wrapper{
     padding: 30px;
@@ -49,5 +51,30 @@ html,body{
 .image-slider .swiper-button-next::after{
     color:#fff;
     font-size: 80px;
+}
+
+/* Пагинация */
+// как и в случае со стрелками мы можем влиять на стандартные стили
+// наших булеттов
+.image-slider .swiper-pagination {
+    bottom: 150px;
+}
+/* Буллеты */
+.image-slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color:#fff;
+}
+/* Фракции */  // обращаемся к классу по умолчанию для фракций при желании поменять стили
+.image-slider .swiper-pagination-fraction{
+    font-size:20px;
+    color:#fff;
+}
+
+/* Прогрессбар */  // обращаемся к классу по умолчанию для прогрессбара при желании поменять стили
+.image-slider .swiper-pagination-progressbar-fill {
+    background-color:aquamarine;
 }
 
