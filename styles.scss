@@ -36,8 +36,8 @@ html,body{
     &__image {
         text-align: center;
         & img{
-            // max-width: 100%;
-            max-width: 800px;
+            max-width: 100%;
+            // max-width: 400px;
         }
     }
 }
@@ -97,3 +97,18 @@ html,body{
 //     background-color: #ccc;
 //     border-radius: 5px;
 //   }
+
+/* Автоширина */
+// применили для вывода слазу нескольких слайдов св-во slidesPerView
+.image-slider .swiper-slider{
+    width: auto;
+}
+
+/* Мультирядность (стили дописаны для slidesPerColumn:2)*/ 
+// .image-slider {
+//     height: 700px;
+// }
+// .image-slider .swiper-slide {
+//     height: calc((100% - 30px) / 2);
+//     overflow:hidden;
+// }
