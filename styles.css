@@ -137,4 +137,10 @@ html, body {
   background-color: aquamarine;
 }
 
+/* Скролл */
+.image-slider .swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
 /*# sourceMappingURL=styles.css.map */
