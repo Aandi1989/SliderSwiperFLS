@@ -1,5 +1,53 @@
 @import "nullstyle.scss";
 
-body{
-    color:red;
+
+html,body{
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    background-color:#333;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.wrapper{
+    padding: 30px;
+    height: 100%;
+}
+
+.title{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin:0px 0px 30px 0px;    
+}
+
+// УКАЗАННЫЕ КЛАССЫ ЯВЛ. КЛАССАМИ ПО УМОЛЧАНИЮ И МОГУТ БЫТЬ ПЕРЕНАЗНАЧЕНЫ СПЕЦ.СВОЙСТВАМИ.
+
+// если слайдер размещен внутрь флекс элемента, то работа слайдера может быть
+// неверной. Чтобы это исправить флекс элементу внутри которого находится
+// слайдер необходимо добавить css параметр min-width:0; после этого 
+// принудительно обновить страницу и проблема должна исчезнуть
+.image-slider {
+    padding:30px 0px 70px 0px;
+    &__wrapper {}
+    &__slide {
+    }
+    &__image {
+        text-align: center;
+        & img{
+            // max-width: 100%;
+            max-width: 800px;
+        }
+    }
+}
+
+/* Стрелки */
+// стили стрелок по умолчанию реализованы с помощью иконочного шрифта
+// и выводятся в всевдо элемент after для стандартных классов.
+// поскольку это иконочный шрифт то мы легко и просто можем поменять 
+// цвет и размер стрелок.
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after{
+    color:#fff;
+    font-size: 80px;
+}
+

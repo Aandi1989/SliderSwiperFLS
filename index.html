@@ -9,34 +9,46 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Главный контейнер слайдера. УКАЗАННЫЕ КЛАССЫ ЯВЛ. КЛАССАМИ ПО УМОЛЧАНИЮ И МОГУТ БЫТЬ ПЕРЕНАЗНАЧЕНЫ СПЕЦ.СВОЙСТВАМИ.-->
-    <div class="swiper-container">
-        <!-- Обязательная оболочка -->
-        <div class="swiper-wrapper">
-            <!-- Слайды -->
-            <div class="swiper-slide">
-                <!-- Контент внутри слайда -->
-                Текст, картинки, другие слайдеры, теги и т.д.
+    <div class="wrapper">
+        <h1 class="title">Слайдер Swiper</h1>
+        <!-- Слайдер -->
+        <div class="image-slider swiper-container">
+            <div class="image-slider__wrapper swiper-wrapper">
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/01.jpg" alt="Картинка">
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/02.jpg" alt="Картинка">
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/03.jpg" alt="Картинка">
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/04.jpg" alt="Картинка">
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/05.jpg" alt="Картинка">
+                    </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="./img/06.jpg" alt="Картинка">
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <!-- Контент внутри слайда -->
-                Текст, картинки, другие слайдеры, теги и т.д.
-            </div>
-            <div class="swiper-slide">
-                <!-- Контент внутри слайда -->
-                Текст, картинки, другие слайдеры, теги и т.д.
-            </div>
-            <!-- и так далее -->
+            <!-- Добавляем если нам нужны стрелки управления -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-        <!-- Добавляем если нам нужны стрелки управления -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- Добавляем если нам нужна пагинация -->
-        <div class="swiper-pagination"></div>
-
-        <!-- Добавляем если нам нужна полоса прокрутки (scrollbar) -->
-        <div class="swiper-scrollbar"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
