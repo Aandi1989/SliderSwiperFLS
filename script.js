@@ -198,4 +198,51 @@ new Swiper('.image-slider',{
     },
     */ 
 
+    /*
+    // Брейк поинты (адаптив)
+    // Ширина экрана. Этот способ работает не для всех свойств нашего слайдера
+    breakpoints:{
+        320: {
+            slidesPerView:1,
+        },
+        480: {
+            slidesPerView:2,
+        },
+        992: {
+            slidesPerView:3,
+        }
+    },
+    */
+
+    /*
+    // Брейк поинты (адаптив)
+    // Соотношение сторон
+    breakpoints: {
+        '@0.75': {
+            slidesPerView:1,
+        },
+        '@1.00': {
+            slidesPerView:2,
+        },
+        '@1.50': {
+            slidesPerView:3,
+        }
+    }
+    */ 
+
+    /* 
+    // Отключить предзагрузку картинок (у меня не применилось)
+    preloadImages: false,
+    // Lazy Loading (подгрузка картинок)
+    lazy: {
+        // Подгружать на старте переключения слайда
+        loadOnTransitiionStart:false,
+        // Подгружать предыдущую и следующую картинки
+        loadPrevNext:false,
+    },
+    // Слежка за видимыми слайдами
+    watchSlidesProgress:true,
+    // Добавление класса ввидимым слайдам
+    watchSlidesVisibility: true,
+    */ 
 });
