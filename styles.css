@@ -149,5 +149,18 @@ html, body {
 }
 
 /* Мультирядность (стили дописаны для slidesPerColumn:2)*/
+/*
+// Вертикальный слайдер 
+.image-slider{
+    padding:0px 0px 0px 0px;
+    height: 700px;
+}
+*/
+/*
+// Эффект куб
+.image-slider{
+    width:500px;
+}
+*/
 
 /*# sourceMappingURL=styles.css.map */
